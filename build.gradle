@@ -26,5 +26,18 @@ application {
 
 tasks.named('test') {
     useJUnitPlatform()
+    enableAssertions = true
 }
+
+//test {
+//    useJUnitPlatform()
+//    // Enable assertions for tests
+//    enableAssertions = true
+//}
+
+run {
+    // Enable assertions for application run
+    jvmArgs '-ea'
+}
+
 

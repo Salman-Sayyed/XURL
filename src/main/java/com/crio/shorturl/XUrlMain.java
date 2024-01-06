@@ -38,8 +38,8 @@ public class XUrlMain {
     
     // Test out getHitCount() for a given long URL. 
     // Here the same long URL has been looked up 2 times as part of url2 & url4
-    assert(xUrl.getHitCount("http://abc2.m").equals(2));
-    // Try to fetch hit count for a non existent long URL, should return 0 
+    assert(xUrl.getHitCount("http://abc2.com").equals(2));
+    // Try to fetch hit count for a non existent long URL, should return 0
     assert(xUrl.getHitCount("http://abcn.com").equals(0));
 
     // From the short URL url1, remove the common section (http://short.url/) and remove any non alphanumeric character
